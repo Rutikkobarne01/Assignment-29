@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        body{
+            background-color: #c2c2a3;
+        }
+        .actress-container{
+            background-color: #a3a375;
+            margin: 20px auto;
+            width:450px;
+            border:solid 3px #3d3d29;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+        .img-acress{
+            width:450px;
+            margin:20px auto;
+            display: block;
+            border-radius: 10px;
+            height: 450px;
+        }
+        .btn{
+            border:solid 2px #3d3d29;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: #999966;
+            color: white;
+            font-size:17px;
+        }
+        .btn-group{
+            display: flex;
+            justify-content: space-around;
+             cursor:pointer;
+        }
+        .header{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="actress-container">
+        <h1 class="header">Favourite
+            Actress</h1>
+        <img src="rasmika.jpg" alt="rasmika-img" class="img-acress" id="rasmika"/>
+
+
+        <div class="btn-group">
+            <button class="btn btn-off" onclick="rasmika()">Rasmika</button>
+            <button class="btn btn-on" onclick="thalapati()">Thalapati</button>
+            <button class="btn btn-on" onclick="shraddha()">Shraddha</button>
+            
+    </div>
+    </div>
+    <script>
+         function rasmika(){
+         const rasmikaImgElement = document.getElementById('rasmika');
+         rasmikaImgElement.src = 'rasmika.jpg';
+} 
+     
+function thalapati(){
+         const rasmikaImgElement = document.getElementById('rasmika');
+         rasmikaImgElement.src = 'thalapati.jpeg';
+}
+function shraddha(){
+         const rasmikaImgElement = document.getElementById('rasmika');
+         rasmikaImgElement.src = 'shraddha.jpeg';
+}
+ </script>
+    
+</body>
+</html>
+
